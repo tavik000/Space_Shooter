@@ -1,0 +1,31 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 860M (ID=0x1392)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   10.18.13.6871
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.017 seconds
+Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.192733 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: f00 -> priority: 1 
+  Thread -> id: 18c8 -> priority: 1 
+  Thread -> id: 1a9c -> priority: 1 
+  Thread -> id: 1bf8 -> priority: 1 
