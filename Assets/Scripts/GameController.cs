@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
 
-    public GameObject hazzard;
+    public GameObject[] hazards;
     public Vector3 spawnValues;
     public int hazzardCount;
     public float spawnWait;
@@ -50,10 +50,11 @@ public class GameController : MonoBehaviour
         while(true)
         { 
             for (int i = 0; i<hazzardCount; i++)
-            { 
+            {
+                GameObject hazard = hazards[Random.Range (0, hazards.Length)];
                 Vector3 spawnPosition = new Vector3(Random.Range (-spawnValues.x, spawnValues.x) , spawnValues.y, spawnValues.z);
                 Quaternion spawnRotation = Quaternion.identity;
-                Instantiate(hazzard, spawnPosition, spawnRotation);
+                Instantiate(hazard, spawnPosition, spawnRotation);
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
