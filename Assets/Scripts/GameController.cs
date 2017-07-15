@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public float spawnWait;
     public float startWait;
     public float waveWait;
+    public float spawnWaitDeduction;
 
     public Text scoreText;
     public Text restartText;
@@ -21,7 +22,7 @@ public class GameController : MonoBehaviour
     private bool restart;
     private int score;
 
-	void Start ()
+    void Start()
     {
         gameOver = false;
         restart = false;
@@ -29,34 +30,54 @@ public class GameController : MonoBehaviour
         gameOverText.text = "";
         score = 0;
         UpdateScore();
-        StartCoroutine (SpawnWaves ());
-	}
+        StartCoroutine(SpawnWaves());
+    }
 
     void Update()
     {
         if (restart)
         {
-            if (Input.GetKeyDown (KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R))
             {
                 Application.LoadLevel(Application.loadedLevel);
             }
-        }    
+        }
     }
 
 
-    IEnumerator SpawnWaves ()
+    IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-        while(true)
-        { 
-            for (int i = 0; i<hazzardCount; i++)
+        while (true)
+        {
+            for (int i = 0; i < hazzardCount; i++)
             {
-                GameObject hazard = hazards[Random.Range (0, hazards.Length)];
-                Vector3 spawnPosition = new Vector3(Random.Range (-spawnValues.x, spawnValues.x) , spawnValues.y, spawnValues.z);
+                GameObject hazard = hazards[Random.Range(0, hazards.Length)];
+                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
                 Quaternion spawnRotation = Quaternion.identity;
                 Instantiate(hazard, spawnPosition, spawnRotation);
                 yield return new WaitForSeconds(spawnWait);
+
             }
+
+            if (spawnWaitDeduction <= 0.05f)
+            {
+                spawnWaitDeduction = 0.05f;
+            }
+            else
+            {
+                spawnWaitDeduction -= 0.09f;
+            }
+            
+            spawnWait -= spawnWaitDeduction;
+            
+            if (spawnWait <= 0.25f)
+            {
+                spawnWait = 0.25f;
+            }
+            hazzardCount += 1;
+
+
             yield return new WaitForSeconds(waveWait);
 
             if (gameOver)
@@ -68,7 +89,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void AddScore (int newScoreValue)
+    public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
         UpdateScore();

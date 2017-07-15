@@ -26,7 +26,12 @@ public class DestoryByContact : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.CompareTag("Boundary") || other.CompareTag("Enemy"))
+        if (CompareTag("Bolt") && other.CompareTag("PlayerBolt"))
+        {
+            return;
+        }
+
+        if (other.CompareTag("Boundary") || other.CompareTag("Enemy") || other.CompareTag("Bolt"))
         {
             return;
         }
