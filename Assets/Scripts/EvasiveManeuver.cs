@@ -17,24 +17,11 @@ public class EvasiveManeuver : MonoBehaviour {
     private float currentSpeed;
     private float targetManeuver;
     private Rigidbody rb;
-    private bool noPlayer;
 
     
 	void Start ()
     {
         rb = GetComponent<Rigidbody>();
-        
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-        if (playerObject == null)
-        {
-            Debug.Log("Cannot find 'PlayerTransform' ");
-            noPlayer = true;
-        }
-        else
-        {
-            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        }
-
         currentSpeed = rb.velocity.z;
         StartCoroutine(Evade());
 		
@@ -46,7 +33,17 @@ public class EvasiveManeuver : MonoBehaviour {
 
         while(true)
         {
-            if(noPlayer == true || Random.value > 0.5f)
+            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+            if (playerObject == null)
+            {
+                Debug.Log("Cannot find 'PlayerTransform' ");
+            }
+            else
+            {
+                playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+            }
+
+            if (playerObject == null || Random.value > 0.5f)
             {
                 targetManeuver = Random.Range(1, dodge) * -Mathf.Sign(transform.position.x);
             }
