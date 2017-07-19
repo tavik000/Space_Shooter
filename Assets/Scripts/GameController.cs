@@ -71,9 +71,9 @@ public class GameController : MonoBehaviour
             
             spawnWait -= spawnWaitDeduction;
             
-            if (spawnWait <= 0.25f)
+            if (spawnWait <= 0.20f)
             {
-                spawnWait = 0.25f;
+                spawnWait = 0.20f;
             }
             hazzardCount += 1;
 
