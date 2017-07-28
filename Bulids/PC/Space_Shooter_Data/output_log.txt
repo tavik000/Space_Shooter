@@ -15,7 +15,7 @@ Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Da
 Loading G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.072 seconds
+- Completed reload, in  0.017 seconds
 Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: G:\Game_Project\Game\Space_Shooter\Bulids\PC\Space_Shooter_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -23,15 +23,39 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.261609 ms
+UnloadTime: 1.230408 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 1cbc -> priority: 1 
-  Thread -> id: b64 -> priority: 1 
-  Thread -> id: b48 -> priority: 1 
-  Thread -> id: 21c8 -> priority: 1 
+  Thread -> id: 1bb0 -> priority: 1 
+  Thread -> id: f28 -> priority: 1 
+  Thread -> id: 1670 -> priority: 1 
+  Thread -> id: 167c -> priority: 1 
 Cannot find 'PlayerTransform' 
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cannot find 'PlayerTransform' 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.571755 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 576.
+Total: 0.487729 ms (FindLiveObjects: 0.037770 ms CreateObjectMapping: 0.027506 ms MarkObjects: 0.413830 ms  DeleteObjects: 0.007389 ms)
+
+Cannot find 'PlayerTransform' 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cannot find 'PlayerTransform' 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.486908 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 576.
+Total: 0.591597 ms (FindLiveObjects: 0.045981 ms CreateObjectMapping: 0.033254 ms MarkObjects: 0.502098 ms  DeleteObjects: 0.009032 ms)
 
 Cannot find 'PlayerTransform' 
  
@@ -64,4 +88,10 @@ Cannot find 'PlayerTransform'
 Cannot find 'PlayerTransform' 
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.558343 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 576.
+Total: 0.579281 ms (FindLiveObjects: 0.045981 ms CreateObjectMapping: 0.034896 ms MarkObjects: 0.489782 ms  DeleteObjects: 0.008210 ms)
 
