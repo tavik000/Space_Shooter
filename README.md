@@ -2,9 +2,9 @@
 init
 This is a Unity3D game project.
 
-Learn from Unity Official Tutortial: [Space Shooter tutorial](https://unity3d.com/cn/learn/tutorials/projects/space-shooter-tutorial)
+Learn from Unity Official Tutortial: [Space Shooter Tutorial](https://unity3d.com/cn/learn/tutorials/projects/space-shooter-tutorial)
 
-Download and play on PC: [Space Shooter Release](https://github.com/tavik000/Space_Shooter/releases)
+Download and play on PC: [Download](https://github.com/tavik000/Space_Shooter/releases)
 
 
 Author: key
