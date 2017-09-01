@@ -23,7 +23,7 @@ Author: key
 
 -----
 
-## Sponsor
+## Sponsorship
 Feel free to support me for no reasons via Wechat Pay or Alipay with QR code below
 
 
